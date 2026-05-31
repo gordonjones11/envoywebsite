@@ -1,0 +1,15 @@
+# Normalize line endings so diffs stay clean across machines.
+# Text files are stored with LF in the repo; Git handles checkout per-OS.
+* text=auto
+
+*.html text
+*.css  text
+*.js   text
+*.md   text
+*.toml text
+
+# Treat images as binary (never touch their bytes).
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary

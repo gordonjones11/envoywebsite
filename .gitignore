@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+
+# Local backups created while editing
+*.bak
+
+# Dependencies (not used, but ignored just in case)
+node_modules/
+
+# Netlify local state
+.netlify/

@@ -224,11 +224,12 @@ p  { line-height: 1.75; color: var(--gray-600); }
   width: 100%;
 }
 
-.hero-content h1   { margin-bottom: 1.25rem; line-height: 1.28; }
+.hero-content h1   { margin-bottom: 1.25rem; line-height: 1.28; font-weight: 500; }
 .hero-content h1 em { font-style: normal; color: var(--green-600); }
 .hero-content h1 .boxed {
   display: inline-block;
   margin-top: 0.18em;                 /* extra breathing room below "Paper Science" */
+  font-weight: 800;                   /* keep "Data Science" bold */
   border: 2.5px solid var(--green-600);
   border-radius: 12px;
   padding: 0.05em 0.32em 0.12em;
@@ -239,6 +240,13 @@ p  { line-height: 1.75; color: var(--gray-600); }
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--green-700);            /* fallback if background-clip unsupported */
+}
+/* smaller period tucked inside the box, right after "Science" */
+.hero-content h1 .boxed-dot {
+  font-size: 0.55em;
+  font-weight: 800;
+  -webkit-text-fill-color: var(--green-600);
+  color: var(--green-600);
 }
 .hero-sub {
   font-size: 1.1rem; line-height: 1.8; color: var(--gray-700);
@@ -354,10 +362,10 @@ p  { line-height: 1.75; color: var(--gray-600); }
 
 /* ─── Data Pipeline ─── */
 .data-pipeline {
-  /* Navy base with blurred paper machine photo at low opacity */
+  /* Digester photo under a left-to-right dark-green wash */
   background:
     linear-gradient(to right, rgba(26,92,56,0.74) 0%, rgba(13,61,34,0.92) 100%),
-    url('../paper-machine-bg.png')
+    url('../digester-bg.png')
     center / cover no-repeat;
 }
 .data-pipeline .section-intro h2 { color: var(--white); }
@@ -384,7 +392,7 @@ p  { line-height: 1.75; color: var(--gray-600); }
 .stats-section {
   background:
     linear-gradient(to right, rgba(30,107,67,0.72) 0%, rgba(13,61,34,0.90) 100%),
-    url('../paper-machine-bg.png')
+    url('../yankee-dryer-bg.png')
     center / cover no-repeat;
   padding: 80px 0;
 }
@@ -408,7 +416,7 @@ p  { line-height: 1.75; color: var(--gray-600); }
 .cta-section { background: linear-gradient(to right, var(--green-800), var(--dark-green)); padding: 96px 0; position: relative; overflow: hidden; }
 .cta-bg-img {
   position: absolute; inset: 0;
-  background-image: url('../paper-machine-bg.png');
+  background-image: url('../recovery-boiler-bg.png');
   background-size: cover; background-position: center; opacity: 0.32;
 }
 .cta-inner    { position: relative; z-index: 1; text-align: center; max-width: 700px; margin: 0 auto; padding: 0 1.5rem; }
@@ -444,7 +452,9 @@ p  { line-height: 1.75; color: var(--gray-600); }
 
 @media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-image { display: none; }
+  /* Show the hero image below the text + buttons on mobile (like the old site) */
+  .hero-image { display: flex; justify-content: center; margin-top: 2rem; }
+  .hero-image img { max-height: 360px; }
   .why-grid   { grid-template-columns: 1fr; }
   .nav-links, .nav-cta { display: none; }
   .nav-toggle { display: flex; }
@@ -629,20 +639,4 @@ p  { line-height: 1.75; color: var(--gray-600); }
 .if-teaser { background: var(--green-800); padding: 72px 0; position: relative; overflow: hidden; }
 .if-teaser-bg {
   position: absolute; inset: 0;
-  background-image: url('https://static.showit.co/1600/pcRxwZT0v3e-xIuZkOyOPQ/233516/green_gradient_blur_background_-_section_4_147.png');
-  background-size: cover; opacity: 0.2;
-}
-.if-teaser-inner { position: relative; z-index: 1; text-align: center; max-width: 700px; margin: 0 auto; padding: 0 1.5rem; }
-.if-teaser .eyebrow { background: rgba(125,211,168,0.14); color: #7dd3a8; }
-.if-teaser h2 { color: var(--white); margin-bottom: 1rem; }
-.if-teaser p  { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 2rem; }
-
-/* ─── Product Page Responsive ─── */
-@media (max-width: 768px) {
-  .product-hero-inner { grid-template-columns: 1fr; }
-  .product-hero-img { display: none; }
-  .feature-split-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .feature-split-inner.reversed .feature-split-img { order: 0; }
-  .chart-gallery, .report-grid { grid-template-columns: 1fr; }
-  .method-grid { grid-template-columns: 1fr; }
-}
+  background-image: url('https://static.showit.co/1600/pcRxw
