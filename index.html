@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Envoy Development | Where Paper Science Meets Data Science</title>
+  <meta name="description" content="Envoy transforms real-time operational data into actionable insights that drive reliability, efficiency, and profitability for pulp and paper mills." />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    /* Fade-in utility */
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <a href="/" class="nav-logo" aria-label="Envoy Development — Home">
+        <img src="https://static.showit.co/1200/C46F5PckjfpCvFsJkLfy1A/233516/envoy_logo_primary_colors.png"
+             alt="Envoy Development" />
+      </a>
+
+      <ul class="nav-links">
+
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0">
+            Solutions <span class="nav-chevron">▾</span>
+          </span>
+          <div class="nav-dropdown" role="menu">
+            <a href="solutions.html" class="dropdown-item" role="menuitem">
+              <strong>Solutions Overview</strong>
+              <span>Compare all three service tiers</span>
+            </a>
+            <a href="process-reliability-reporting.html" class="dropdown-item" role="menuitem">
+              <strong>Process Reliability Reporting</strong>
+              <span>Daily engineer-reviewed insights before 7 AM</span>
+            </a>
+            <a href="smart-centerlines.html" class="dropdown-item" role="menuitem">
+              <strong>Envoy Smart Centerlines</strong>
+              <span>Optimal targets for every grade and rate</span>
+            </a>
+            <a href="envoy-intelligence.html" class="dropdown-item" role="menuitem">
+              <strong>Envoy Intelligence</strong>
+              <span>AI-orchestrated real-time mill intelligence</span>
+            </a>
+          </div>
+        </li>
+
+        <li><a class="nav-link" href="intelligent-factory.html">The Intelligent Factory</a></li>
+        <li><a class="nav-link" href="resources.html">Resources</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+
+      </ul>
+
+      <a href="contact.html" class="btn btn-primary nav-cta">Request a Demo</a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+    <a href="solutions.html">Solutions Overview</a>
+    <a href="process-reliability-reporting.html">Process Reliability Reporting</a>
+    <a href="smart-centerlines.html">Envoy Smart Centerlines</a>
+    <a href="envoy-intelligence.html">Envoy Intelligence</a>
+    <a href="intelligent-factory.html">The Intelligent Factory</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner container">
+
+      <div class="hero-content">
+        <p class="eyebrow">Pulp &amp; Paper Process Intelligence</p>
+        <h1>Where Paper Science<br>Meets <span class="boxed">Data Science</span>.</h1>
+        <p class="hero-sub">
+          Envoy transforms real-time operational data into actionable insights
+          that drive reliability, efficiency, and profitability for pulp and paper mills.
+        </p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+          <a href="solutions.html" class="btn btn-outline">Explore Solutions</a>
+        </div>
+      </div>
+
+      <div class="hero-image" aria-hidden="true">
+        <img src="https://static.showit.co/800/A0t1Q9gdsl7uXB-vwbaozQ/233516/envoy_homepage_man.png"
+             alt="Engineer reviewing Envoy process data in a pulp and paper mill" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PAIN POINTS
+  ══════════════════════════════════════════ -->
+  <section class="pain-points section" aria-labelledby="pain-heading">
+    <div class="container">
+
+      <div class="section-intro fade-in">
+        <p class="eyebrow">The Challenge</p>
+        <h2 id="pain-heading">Operating a modern pulp and paper mill isn't easy.</h2>
+        <p>We hear it every day. Four problems come up again and again — and Envoy is built to help with all of them.</p>
+      </div>
+
+      <div class="pain-grid">
+
+        <div class="pain-card fade-in">
+          <div class="pain-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h4>Unplanned Downtime</h4>
+          <p>Unexpected equipment failures that cut into output and profit — often with little warning and no clear path to root cause.</p>
+        </div>
+
+        <div class="pain-card fade-in">
+          <div class="pain-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M2 12c2-4 4-6 6-6s4 4 6 4 4-4 6-4"/><path d="M2 18c2-4 4-6 6-6s4 4 6 4 4-4 6-4"/></svg>
+          </div>
+          <h4>Process Instability</h4>
+          <p>Machine breaks and process fluctuations that make consistent production difficult — especially across shifts and grade changes.</p>
+        </div>
+
+        <div class="pain-card fade-in">
+          <div class="pain-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h4>Cost Pressure</h4>
+          <p>Energy, chemical, and maintenance costs keep rising while margins keep shrinking — leaving little room for inefficiency.</p>
+        </div>
+
+        <div class="pain-card fade-in">
+          <div class="pain-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 1 0-16 0"/><path d="M16 11l2 2 4-4"/></svg>
+          </div>
+          <h4>Lean Teams, High Expectations</h4>
+          <p>Smaller ops teams handling more responsibilities — with fewer process experts to lean on as senior talent retires.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       PRODUCT SUITE — THREE TIERS
+  ══════════════════════════════════════════ -->
+  <section class="product-suite section" aria-labelledby="tiers-heading">
+    <div class="container">
+
+      <div class="section-intro fade-in">
+        <p class="eyebrow">Our Solutions</p>
+        <h2 id="tiers-heading">One platform. Three levels of intelligence.</h2>
+        <p>Envoy meets you where you are — and helps you go further. Every tier is fully managed by our engineering team, with no extra workload for your staff.</p>
+      </div>
+
+      <div class="tiers-grid">
+
+        <!-- Tier 1 -->
+        <div class="tier-card fade-in">
+          <div class="tier-badge">Tier 1 — Foundation</div>
+          <div class="tier-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Process Reliability Reporting</h3>
+          <p class="tier-desc">Envoy engineers analyzing your data overnight — delivering clear, actionable findings before your shift starts. The foundation of data-driven mill operations.</p>
+          <ul class="tier-features">
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              3–8 actionable insights delivered before 7 AM
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              CUSUM, time-series &amp; statistical analysis
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Root cause, correlation &amp; control loop reports
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Startup &amp; shift reports
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Most clients live within one week
+            </li>
+          </ul>
+          <a href="process-reliability-reporting.html" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="tier-card fade-in">
+          <div class="tier-badge">Tier 2 — Optimization</div>
+          <div class="tier-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg>
+          </div>
+          <h3>Envoy Smart Centerlines</h3>
+          <p class="tier-desc">Optimal target values for every grade and rate — statistically derived from your operational data — so operators always know exactly where process variables should be.</p>
+          <ul class="tier-features">
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Everything in Process Reliability Reporting
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Grade- and rate-specific centerlines
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Statistically-derived optimal targets, by grade &amp; rate
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Live variable tracking vs. target windows
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Faster grade changes &amp; startup recovery
+            </li>
+          </ul>
+          <a href="smart-centerlines.html" class="btn btn-primary">Learn More</a>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="tier-card featured fade-in">
+          <div class="tier-badge">Tier 3 — Transformation</div>
+          <div class="tier-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Envoy Intelligence</h3>
+          <p class="tier-desc">Real-time alerts, physics-based predictive models, and engineer-vetted response playbooks — all orchestrated by AI. It's like having your best senior engineer always on call.</p>
+          <ul class="tier-features">
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Everything in Envoy Smart Centerlines
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Real-time Envoy Advisor alerts
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Physics-based machine learning models
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Failure-Cause-Fix recommendations
+            </li>
+            <li>
+              <span class="tier-check" aria-hidden="true"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>
+              Predictive downtime prevention
+            </li>
+          </ul>
+          <a href="envoy-intelligence.html" class="btn btn-primary">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       DATA PIPELINE DIAGRAM
+  ══════════════════════════════════════════ -->
+  <section class="data-pipeline section" aria-labelledby="pipeline-heading">
+    <div class="container">
+
+      <div class="section-intro fade-in">
+        <p class="eyebrow eyebrow-light">How It Works</p>
+        <h2 id="pipeline-heading">From 3,000 tags to 8 insights — every morning.</h2>
+        <p>Our engineers analyze your mill's operational data overnight using statistical models, process knowledge, and a rules engine built from 20+ years of mill experience. Here's how 3,000 raw process signals become clear, prioritized action items before your shift begins.</p>
+      </div>
+
+      <div class="pipeline-wrap fade-in" role="img" aria-label="Data pipeline: 3,000 process tags are processed through statistical, process, and rules models overnight, filtered to roughly 100 exceptions, reviewed by Envoy engineers, and delivered as 3 to 8 actionable insights before 7 AM.">
+        <svg viewBox="0 0 930 196" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+          <!-- Box 1: Process Tags -->
+          <g transform="translate(10,20)">
+            <rect width="152" height="156" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="76" y="42" text-anchor="middle" font-size="28" font-weight="900" fill="#7dd3a8" font-family="Inter,sans-serif">3,000+</text>
+            <text x="76" y="62" text-anchor="middle" font-size="11.5" font-weight="600" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Process Tags</text>
+            <line x1="18" y1="74" x2="134" y2="74" stroke="rgba(255,255,255,0.08)"/>
+            <text x="76" y="92"  text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Paper Machines</text>
+            <text x="76" y="108" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Digesters &amp; Boilers</text>
+            <text x="76" y="124" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Recovery &amp; Utilities</text>
+            <text x="76" y="146" text-anchor="middle" font-size="8.5" font-style="italic" fill="rgba(255,255,255,0.28)" font-family="Inter,sans-serif">Real-time data feed</text>
+          </g>
+
+          <!-- Arrow 1 -->
+          <line x1="162" y1="98" x2="196" y2="98" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <polygon points="196,93.5 204,98 196,102.5" fill="rgba(255,255,255,0.28)"/>
+
+          <!-- Box 2: Models -->
+          <g transform="translate(204,20)">
+            <rect width="152" height="156" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="76" y="30" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.6)" font-family="Inter,sans-serif">OVERNIGHT PROCESSING</text>
+            <line x1="14" y1="38" x2="138" y2="38" stroke="rgba(255,255,255,0.08)"/>
+            <rect x="14" y="46" width="124" height="24" rx="5" fill="rgba(125,211,168,0.13)"/>
+            <text x="76" y="62" text-anchor="middle" font-size="10" font-weight="600" fill="#7dd3a8" font-family="Inter,sans-serif">Statistical Models</text>
+            <rect x="14" y="76" width="124" height="24" rx="5" fill="rgba(125,211,168,0.13)"/>
+            <text x="76" y="92" text-anchor="middle" font-size="10" font-weight="600" fill="#7dd3a8" font-family="Inter,sans-serif">Process Models</text>
+            <rect x="14" y="106" width="124" height="24" rx="5" fill="rgba(125,211,168,0.13)"/>
+            <text x="76" y="122" text-anchor="middle" font-size="10" font-weight="600" fill="#7dd3a8" font-family="Inter,sans-serif">Rules Engine</text>
+            <text x="76" y="148" text-anchor="middle" font-size="8.5" font-style="italic" fill="rgba(255,255,255,0.28)" font-family="Inter,sans-serif">+ Knowledge Base</text>
+          </g>
+
+          <!-- Arrow 2 -->
+          <line x1="356" y1="98" x2="390" y2="98" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <polygon points="390,93.5 398,98 390,102.5" fill="rgba(255,255,255,0.28)"/>
+
+          <!-- Box 3: Exceptions (highlighted) -->
+          <g transform="translate(398,20)">
+            <rect width="152" height="156" rx="10" fill="rgba(125,211,168,0.09)" stroke="#7dd3a8" stroke-width="1.5"/>
+            <text x="76" y="48" text-anchor="middle" font-size="34" font-weight="900" fill="#7dd3a8" font-family="Inter,sans-serif">~100</text>
+            <text x="76" y="70" text-anchor="middle" font-size="12" font-weight="600" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Exceptions</text>
+            <text x="76" y="88" text-anchor="middle" font-size="12" font-weight="600" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Flagged</text>
+            <line x1="18" y1="100" x2="134" y2="100" stroke="rgba(255,255,255,0.08)"/>
+            <text x="76" y="118" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Filtered from</text>
+            <text x="76" y="134" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">3,000+ inputs</text>
+            <text x="76" y="150" text-anchor="middle" font-size="8.5" font-style="italic" fill="rgba(255,255,255,0.28)" font-family="Inter,sans-serif">Only what matters</text>
+          </g>
+
+          <!-- Arrow 3 -->
+          <line x1="550" y1="98" x2="584" y2="98" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <polygon points="584,93.5 592,98 584,102.5" fill="rgba(255,255,255,0.28)"/>
+
+          <!-- Box 4: Engineers -->
+          <g transform="translate(592,20)">
+            <rect width="152" height="156" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)" stroke-width="1"/>
+            <text x="76" y="46" text-anchor="middle" font-size="28" fill="white" font-family="Inter,sans-serif">👷</text>
+            <text x="76" y="70" text-anchor="middle" font-size="11.5" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Envoy Engineers</text>
+            <text x="76" y="86" text-anchor="middle" font-size="11.5" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Review</text>
+            <line x1="18" y1="98" x2="134" y2="98" stroke="rgba(255,255,255,0.08)"/>
+            <text x="76" y="116" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">20 engineers</text>
+            <text x="76" y="132" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">500+ yrs experience</text>
+            <text x="76" y="150" text-anchor="middle" font-size="8.5" font-style="italic" fill="rgba(255,255,255,0.28)" font-family="Inter,sans-serif">Human expertise applied</text>
+          </g>
+
+          <!-- Arrow 4 -->
+          <line x1="744" y1="98" x2="778" y2="98" stroke="rgba(255,255,255,0.22)" stroke-width="1.5"/>
+          <polygon points="778,93.5 786,98 778,102.5" fill="rgba(255,255,255,0.28)"/>
+
+          <!-- Box 5: Daily Report (highlighted) -->
+          <g transform="translate(786,20)">
+            <rect width="134" height="156" rx="10" fill="rgba(46,204,113,0.14)" stroke="rgba(46,204,113,0.45)" stroke-width="1.5"/>
+            <text x="67" y="24" text-anchor="middle" font-size="8" font-weight="700" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif">BEFORE 7 AM</text>
+            <text x="67" y="60" text-anchor="middle" font-size="34" font-weight="900" fill="white" font-family="Inter,sans-serif">3–8</text>
+            <text x="67" y="80" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Actionable</text>
+            <text x="67" y="97" text-anchor="middle" font-size="11" font-weight="600" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Insights</text>
+            <line x1="14" y1="108" x2="120" y2="108" stroke="rgba(255,255,255,0.08)"/>
+            <text x="67" y="124" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Engineer-reviewed</text>
+            <text x="67" y="140" text-anchor="middle" font-size="9.5" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Ready to act on</text>
+            <text x="67" y="155" text-anchor="middle" font-size="8" font-style="italic" fill="rgba(255,255,255,0.25)" font-family="Inter,sans-serif">Delivered via email</text>
+          </g>
+
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       WHY ENVOY
+  ══════════════════════════════════════════ -->
+  <section class="why-envoy section" aria-labelledby="why-heading">
+    <div class="container">
+
+      <div class="section-intro fade-in">
+        <p class="eyebrow">Why Envoy</p>
+        <h2 id="why-heading">Why leading mills choose Envoy.</h2>
+        <p>We're not a dashboard company. We're a team of engineers who happen to build software — and that changes everything about what we deliver.</p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-item fade-in">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div>
+            <h4>Mill-Side Expertise, Built In</h4>
+            <p>20 engineers. 500+ years of hands-on mill experience. We've worked the floor. We know your process, and we know what matters when production is on the line.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>Insights Before You Clock In</h4>
+            <p>Clear, actionable findings delivered before 7 AM — no dashboards to decode, no data mining required. Your team gets decisions, not data.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <div>
+            <h4>Comprehensive Reports That Drive Results</h4>
+            <p>Root cause analysis, correlation studies, control loop health checks — we distill thousands of data points into reports your team can actually act on.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <h4>Nothing New to Learn</h4>
+            <p>Your team doesn't lift a finger. We handle everything from the data connection to daily delivery. No software to install, no training required.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <h4>A Solution That Grows With You</h4>
+            <p>Start with daily process reporting. Add Smart Centerlines. Evolve to Envoy Intelligence for real-time predictive capability. At your pace, on your terms.</p>
+          </div>
+        </div>
+
+        <div class="why-item fade-in">
+          <div class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>95% Client Renewal Rate</h4>
+            <p>Our clients keep coming back — and keep expanding what they use — because the insights drive real, measurable results. We're proud to earn that trust every year.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       STATS
+  ══════════════════════════════════════════ -->
+  <section class="stats-section" aria-label="Envoy by the numbers">
+    <div class="container">
+      <div class="stats-grid">
+
+        <div class="stat-item fade-in">
+          <div class="stat-num" data-count="500" data-suffix="+">500+</div>
+          <div class="stat-label">Mill Processes</div>
+          <div class="stat-sub">Monitored across our client base</div>
+        </div>
+
+        <div class="stat-item fade-in">
+          <div class="stat-num" data-count="94" data-suffix="%">94%</div>
+          <div class="stat-label">Client Renewal Rate</div>
+          <div class="stat-sub">Across all service tiers</div>
+        </div>
+
+        <div class="stat-item fade-in">
+          <div class="stat-num" data-count="500" data-suffix="+">500+</div>
+          <div class="stat-label">Years of Mill Experience</div>
+          <div class="stat-sub">Combined on our engineering team</div>
+        </div>
+
+        <div class="stat-item fade-in">
+          <div class="stat-num" data-count="20" data-suffix="+">20+</div>
+          <div class="stat-label">In-House Engineers</div>
+          <div class="stat-sub">With real mill-side backgrounds</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIAL
+  ══════════════════════════════════════════ -->
+  <section class="testimonial-section section" aria-label="Client testimonial">
+    <div class="container">
+      <div class="testimonial-inner fade-in">
+        <div class="testimonial-card">
+          <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial-text">
+            Each morning, checking your reports is the first thing I do. I see what issues
+            could be going on and ask operators why something may be if I don't know the
+            answer myself. It's changed how we start every shift.
+          </p>
+          <p class="testimonial-attr">Mill Superintendent — US Paper Operations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CTA SECTION
+  ══════════════════════════════════════════ -->
+  <section class="cta-section" aria-label="Request a demonstration">
+    <div class="cta-bg-img" aria-hidden="true"></div>
+    <div class="cta-inner">
+      <p class="eyebrow eyebrow-light">Get Started</p>
+      <h2>Let our engineers handle the data — so you can run the mill.</h2>
+      <p>
+        Envoy is the only pulp and paper analytics company backed by a team of real engineers
+        with real mill experience. While others give you dashboards, we give you decisions —
+        delivered every morning.
+      </p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="contact.html" class="btn btn-white">Request a Demo</a>
+        <a href="solutions.html" class="btn btn-white-outline">Explore Solutions</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <img src="https://static.showit.co/1200/C46F5PckjfpCvFsJkLfy1A/233516/envoy_logo_primary_colors.png"
+               alt="Envoy Development" />
+          <p>Envoy transforms real-time mill data into actionable insights — delivered by engineers with real mill experience. Founded 2003.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="solutions.html">Solutions Overview</a></li>
+            <li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li>
+            <li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li>
+            <li><a href="envoy-intelligence.html">Envoy Intelligence</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Envoy</a></li>
+            <li><a href="intelligent-factory.html">The Intelligent Factory</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="resources.html#articles">Articles &amp; Insights</a></li>
+            <li><a href="resources.html#whitepapers">Whitepapers</a></li>
+            <li><a href="resources.html#case-studies">Case Studies</a></li>
+            <li><a href="resources.html#glossary">Glossary</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <span>&copy; 2025 Envoy Development, LLC. All rights reserved.</span>
+        <a href="contact.html">Request a Demo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

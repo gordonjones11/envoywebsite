@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Process Reliability Reporting | Envoy Development</title>
+  <meta name="description" content="Envoy analyzes your mill's operational data overnight and delivers 3–8 engineer-reviewed insights before 7 AM — so your team starts every shift with clear, prioritized action items." />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="https://static.showit.co/1200/C46F5PckjfpCvFsJkLfy1A/233516/envoy_logo_primary_colors.png" alt="Envoy Development" />
+      </a>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <span class="nav-link" tabindex="0">Solutions <span class="nav-chevron">▾</span></span>
+          <div class="nav-dropdown">
+            <a href="solutions.html" class="dropdown-item"><strong>Solutions Overview</strong><span>Compare all three service tiers</span></a>
+            <a href="process-reliability-reporting.html" class="dropdown-item"><strong>Process Reliability Reporting</strong><span>Daily engineer-reviewed insights before 7 AM</span></a>
+            <a href="smart-centerlines.html" class="dropdown-item"><strong>Envoy Smart Centerlines</strong><span>Optimal targets for every grade and rate</span></a>
+            <a href="envoy-intelligence.html" class="dropdown-item"><strong>Envoy Intelligence</strong><span>AI-orchestrated real-time mill intelligence</span></a>
+          </div>
+        </li>
+        <li><a class="nav-link" href="intelligent-factory.html">The Intelligent Factory</a></li>
+        <li><a class="nav-link" href="resources.html">Resources</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Request a Demo</a>
+      <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="solutions.html">Solutions Overview</a>
+    <a href="process-reliability-reporting.html">Process Reliability Reporting</a>
+    <a href="smart-centerlines.html">Envoy Smart Centerlines</a>
+    <a href="envoy-intelligence.html">Envoy Intelligence</a>
+    <a href="intelligent-factory.html">The Intelligent Factory</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+  </div>
+
+
+  <!-- ═══ HERO ═══ -->
+  <section class="product-hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="product-hero-inner container">
+      <div class="product-hero-content">
+        <p class="eyebrow">Tier 1 — Foundation</p>
+        <h1>Process issues resolved before your shift begins.</h1>
+        <p class="hero-sub">Envoy analyzes your mill's operational data overnight and delivers engineer-reviewed findings every morning — so your team can focus on execution, not diagnosis.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+          <a href="solutions.html" class="btn btn-outline">View All Solutions</a>
+        </div>
+      </div>
+      <div class="product-hero-img" aria-hidden="true">
+        <img src="https://static.showit.co/800/hw8nO-9MOjMjw7pYPRwU_Q/233516/envoy_project_monitoring.png" alt="Envoy Process Reliability Reporting" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ WHAT YOU GET EVERY MORNING ═══ -->
+  <section class="feature-split section" style="background:var(--white);">
+    <div class="container">
+      <div class="feature-split-inner fade-in">
+        <div class="feature-split-content">
+          <p class="eyebrow">The Daily Report</p>
+          <h2>What lands in your inbox before 7 AM.</h2>
+          <p>Every morning before your first shift begins, your Envoy engineer has already reviewed overnight process data and compiled a concise, prioritized set of findings specific to your mill. No dashboards to open, no data to interpret — just clear guidance ready to act on.</p>
+          <p>Each daily report is tailored to your operation. The insights are ordered by urgency, supported with process data, and written by an engineer who understands your equipment and your history.</p>
+          <ul class="feature-bullets">
+            <li><span class="chk"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>3–8 prioritized insights, ordered by impact</li>
+            <li><span class="chk"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>Supporting data and trend context for each finding</li>
+            <li><span class="chk"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>Startup reports after planned or unplanned outages</li>
+            <li><span class="chk"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>Shift reports for continuous operations</li>
+            <li><span class="chk"><svg viewBox="0 0 12 10"><polyline points="1,5 4,8 11,1"/></svg></span>Delivered via email — no software to install</li>
+          </ul>
+        </div>
+        <div class="feature-split-img">
+          <img src="https://static.showit.co/800/9o6p8TeYcP2Zx9g1rvTFAw/233516/envoy_homepage_woman.png" alt="Mill engineer reviewing daily Envoy report" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ WHAT OUR ENGINEERS LOOK FOR ═══ -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">Areas of Focus</p>
+        <h2>What our engineers look for — every night.</h2>
+        <p>Our engineers aren't running the same canned report for every mill. They know your process, your equipment history, and your current targets. Here are the categories of issues they investigate nightly across your operation.</p>
+      </div>
+      <div class="report-grid fade-in">
+        <div class="report-card">
+          <h4>Pre-Break Signatures</h4>
+          <p>Process conditions that historically precede sheet breaks — tension anomalies, moisture swings, basis weight instability — flagged before they cascade into downtime.</p>
+        </div>
+        <div class="report-card">
+          <h4>Energy & Chemical Deviations</h4>
+          <p>Unexpected consumption patterns in steam, power, bleach chemicals, and water — often the earliest signal of equipment performance degradation or process drift.</p>
+        </div>
+        <div class="report-card">
+          <h4>Control Loop Performance</h4>
+          <p>PIDs in saturation, loops hunting, valves at limits — degraded control loop health is a silent driver of instability that many mills don't monitor systematically.</p>
+        </div>
+        <div class="report-card">
+          <h4>Off-Quality & Grade Risk</h4>
+          <p>Variables trending toward specification limits, consistency issues, or conditions that have historically correlated with customer complaints or out-of-spec rolls.</p>
+        </div>
+        <div class="report-card">
+          <h4>Equipment Health Signals</h4>
+          <p>Flow, pressure, and temperature deviations that suggest bearing wear, pump cavitation, fouling, or other maintenance-relevant conditions — before failure occurs.</p>
+        </div>
+        <div class="report-card">
+          <h4>Process Stability Trends</h4>
+          <p>Multi-day trends showing gradual drift in key variables — the kind of slow-moving shift that's invisible day-to-day but significant over a week or a month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ ANALYTICS METHODS ═══ -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">The Analytics</p>
+        <h2>Proven methods. Engineer-interpreted results.</h2>
+        <p>We use established statistical methods — not black-box algorithms — to analyze your process data. Every finding is reviewed and interpreted by an engineer before it reaches you. Here's what's working in the background every night.</p>
+      </div>
+
+      <div class="chart-gallery fade-in">
+        <div class="chart-item">
+          <img src="https://static.showit.co/800/hjzz9dlx1p2oFLraID9qgQ/233516/cusum_chart_1_blurred.png" alt="CUSUM control chart example" />
+          <div class="chart-label">CUSUM Chart — Detecting subtle process mean shifts</div>
+        </div>
+        <div class="chart-item">
+          <img src="https://static.showit.co/800/v1jl3qrpUgoI9MemAeDaMQ/233516/time_series_chart_blurred.png" alt="Time series trend chart example" />
+          <div class="chart-label">Time Series Analysis — Trend and pattern identification</div>
+        </div>
+        <div class="chart-item">
+          <img src="https://static.showit.co/800/Pl5A5BAjpzpjkYlQov_xqA/233516/quartile_chart_blurred.png" alt="Quartile distribution chart example" />
+          <div class="chart-label">Quartile Analysis — Performance distribution across conditions</div>
+        </div>
+        <div class="chart-item">
+          <img src="https://static.showit.co/800/VwwEtfU0qyJYIEP5n8roTA/233516/cusum_chart_2_blurred.png" alt="CUSUM chart example 2" />
+          <div class="chart-label">Multi-Variable CUSUM — Cross-variable deviation detection</div>
+        </div>
+      </div>
+
+      <div class="method-grid fade-in" style="margin-top:2rem;">
+        <div class="method-card">
+          <h4>CUSUM Control Charts</h4>
+          <p>Cumulative Sum charts detect subtle, sustained shifts in a process mean that standard control charts miss entirely. Where a Shewhart chart flags large, sudden excursions, CUSUM accumulates small deviations over time — making it highly sensitive to the gradual drift that typically precedes process problems in mill environments.</p>
+        </div>
+        <div class="method-card">
+          <h4>Time Series Analysis</h4>
+          <p>Identifying trends, cycles, and anomalies across hundreds of process variables simultaneously. Our models account for the natural operating patterns of your mill — shift changes, grade changes, seasonal effects — so what we flag is genuinely unusual, not just normal variation.</p>
+        </div>
+        <div class="method-card">
+          <h4>Quartile &amp; Distribution Analysis</h4>
+          <p>Understanding how a variable performs across the full range of operating conditions — not just its average. Quartile analysis reveals whether a process is performing in the best quarter of its historical range, or has quietly slipped to the bottom — a distinction that averages hide completely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ COMPREHENSIVE REPORTS ═══ -->
+  <section class="section" style="background:var(--green-50);">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow">Going Deeper</p>
+        <h2>When you need more than the daily report.</h2>
+        <p>The daily report covers what changed overnight. Comprehensive reports go deeper — answering the harder questions about why something happened, what's connected to what, and where your process is losing ground. These are available on request and scheduled on a regular basis for clients who want them.</p>
+      </div>
+      <div class="report-grid fade-in">
+        <div class="report-card">
+          <h4>Correlation Studies</h4>
+          <p>Finding hidden relationships between process variables that aren't obvious from daily observation. Often reveals that a quality problem has a root cause several steps upstream — or that two variables that seem unrelated are actually driving each other. These studies have changed how many of our clients think about their process.</p>
+        </div>
+        <div class="report-card">
+          <h4>Root Cause Analysis</h4>
+          <p>When something goes wrong — a break, an off-quality run, an unexpected energy spike — our engineers trace it backward through process data to identify the initiating cause. This goes beyond the event log to examine what conditions existed in the hours and days before the problem occurred.</p>
+        </div>
+        <div class="report-card">
+          <h4>Time Period Comparisons</h4>
+          <p>Comparing mill performance before and after a change — a new grade, a maintenance event, a chemical reformulation, a seasonal transition. Quantifies whether the change actually helped, and if so, where, and by how much. The discipline of measurement your team rarely has time to do itself.</p>
+        </div>
+        <div class="report-card">
+          <h4>Control Loop Health</h4>
+          <p>A systematic audit of your PID control loops: which are in saturation, which are hunting, which have valves at their limits, and which are simply not contributing to process stability. Degraded control loops are one of the most common — and most overlooked — contributors to process instability in mature mill environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ DELIVERY WORKFLOW DIAGRAM ═══ -->
+  <section class="dark-diagram section">
+    <div class="container">
+      <div class="section-intro fade-in">
+        <p class="eyebrow eyebrow-light">The Process</p>
+        <h2>From mill data to your inbox — every night.</h2>
+        <p>While your mill runs overnight, Envoy is working. Here's the workflow that produces your morning report.</p>
+      </div>
+      <div class="diagram-wrap fade-in" role="img" aria-label="Delivery workflow: mill data collected continuously, processed overnight from 11 PM to 5 AM, engineer review from 5 to 6:30 AM, report delivered before 7 AM, mill team acts on findings.">
+        <svg viewBox="0 0 880 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+
+          <!-- Connecting line -->
+          <line x1="76" y1="88" x2="804" y2="88" stroke="rgba(255,255,255,0.08)" stroke-width="2" stroke-dasharray="6,4"/>
+
+          <!-- Step 1: Mill Data -->
+          <g transform="translate(20,20)">
+            <rect width="112" height="136" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.13)" stroke-width="1"/>
+            <circle cx="56" cy="46" r="22" fill="rgba(125,211,168,0.15)" stroke="#7dd3a8" stroke-width="1.5"/>
+            <text x="56" y="52" text-anchor="middle" font-size="18" fill="#7dd3a8" font-family="Inter,sans-serif">⚙</text>
+            <text x="56" y="84" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Mill Data</text>
+            <text x="56" y="100" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Continuous</text>
+            <text x="56" y="114" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">real-time feed</text>
+            <text x="56" y="130" text-anchor="middle" font-size="8" font-style="italic" fill="rgba(255,255,255,0.28)" font-family="Inter,sans-serif">3,000+ tags</text>
+          </g>
+
+          <!-- Arrow -->
+          <polygon points="154,84 162,88 154,92" fill="rgba(255,255,255,0.25)"/>
+
+          <!-- Step 2: Overnight Processing -->
+          <g transform="translate(164,20)">
+            <rect width="136" height="136" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.13)" stroke-width="1"/>
+            <circle cx="68" cy="46" r="22" fill="rgba(125,211,168,0.15)" stroke="#7dd3a8" stroke-width="1.5"/>
+            <text x="68" y="52" text-anchor="middle" font-size="18" fill="#7dd3a8" font-family="Inter,sans-serif">📊</text>
+            <text x="68" y="84" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Overnight</text>
+            <text x="68" y="98" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Processing</text>
+            <text x="68" y="115" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Statistical + process</text>
+            <text x="68" y="129" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">models run overnight</text>
+          </g>
+          <text x="222" y="176" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif">11 PM – 5 AM</text>
+
+          <!-- Arrow -->
+          <polygon points="312,84 320,88 312,92" fill="rgba(255,255,255,0.25)"/>
+
+          <!-- Step 3: Exception Flagging -->
+          <g transform="translate(322,20)">
+            <rect width="136" height="136" rx="10" fill="rgba(125,211,168,0.08)" stroke="#7dd3a8" stroke-width="1.5"/>
+            <circle cx="68" cy="46" r="22" fill="rgba(125,211,168,0.2)" stroke="#7dd3a8" stroke-width="1.5"/>
+            <text x="68" y="52" text-anchor="middle" font-size="18" fill="#7dd3a8" font-family="Inter,sans-serif">🔍</text>
+            <text x="68" y="84" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">~100 Exceptions</text>
+            <text x="68" y="98" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Flagged</text>
+            <text x="68" y="115" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Filtered from</text>
+            <text x="68" y="129" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">3,000+ inputs</text>
+          </g>
+
+          <!-- Arrow -->
+          <polygon points="470,84 478,88 470,92" fill="rgba(255,255,255,0.25)"/>
+
+          <!-- Step 4: Engineer Review -->
+          <g transform="translate(480,20)">
+            <rect width="136" height="136" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.13)" stroke-width="1"/>
+            <circle cx="68" cy="46" r="22" fill="rgba(125,211,168,0.15)" stroke="#7dd3a8" stroke-width="1.5"/>
+            <text x="68" y="52" text-anchor="middle" font-size="18" fill="white" font-family="Inter,sans-serif">👷</text>
+            <text x="68" y="84" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Engineer</text>
+            <text x="68" y="98" text-anchor="middle" font-size="10" font-weight="700" fill="rgba(255,255,255,0.88)" font-family="Inter,sans-serif">Review</text>
+            <text x="68" y="115" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">Interpret, verify,</text>
+            <text x="68" y="129" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.42)" font-family="Inter,sans-serif">and write findings</text>
+          </g>
+          <text x="548" y="176" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif">5 AM – 6:30 AM</text>
+
+          <!-- Arrow -->
+          <polygon points="628,84 636,88 628,92" fill="rgba(255,255,255,0.25)"/>
+
+          <!-- Step 5: Delivery -->
+          <g transform="translate(638,20)">
+            <rect width="140" height="136" rx="10" fill="rgba(46,204,113,0.13)" stroke="rgba(46,204,113,0.45)" stroke-width="1.5"/>
+            <circle cx="70" cy="46" r="22" fill="rgba(46,204,113,0.2)" stroke="rgba(46,204,113,0.6)" stroke-width="1.5"/>
+            <text x="70" y="52" text-anchor="middle" font-size="18" fill="white" font-family="Inter,sans-serif">📧</text>
+            <text x="70" y="82" text-anchor="middle" font-size="9" font-weight="700" fill="rgba(255,255,255,0.5)" font-family="Inter,sans-serif">BEFORE 7 AM</text>
+            <text x="70" y="97" text-anchor="middle" font-size="11" font-weight="700" fill="white" font-family="Inter,sans-serif">Report Delivered</text>
+            <text x="70" y="113" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif">3–8 insights in your</text>
+            <text x="70" y="127" text-anchor="middle" font-size="9" fill="rgba(255,255,255,0.45)" font-family="Inter,sans-serif">inbox before shift start</text>
+          </g>
+
+          <!-- Time bar -->
+          <rect x="20" y="185" width="838" height="32" rx="6" fill="rgba(255,255,255,0.04)"/>
+          <text x="76" y="206" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif">Always on</text>
+          <text x="232" y="206" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif">11 PM → 5 AM</text>
+          <text x="390" y="206" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif">Automated</text>
+          <text x="548" y="206" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.3)" font-family="Inter,sans-serif">5 AM → 6:30 AM</text>
+          <text x="710" y="206" text-anchor="middle" font-size="8.5" fill="#7dd3a8" font-family="Inter,sans-serif">Before 7 AM ✓</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FAST START ═══ -->
+  <section class="section" style="background:var(--green-50);">
+    <div class="container" style="max-width:760px;">
+      <div class="section-intro fade-in" style="text-align:center; max-width:100%;">
+        <p class="eyebrow">Getting Started</p>
+        <h2>Most clients are live within a week.</h2>
+        <p>There's no software to install, no lengthy onboarding, and no learning curve for your team. Here's how it works.</p>
+      </div>
+      <div class="steps-list fade-in">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div>
+            <h4>Connect your data</h4>
+            <p>We work with your IT team to establish a read-only connection to your process historian — OSIsoft PI, Aspentech IP.21, or similar. This is typically the only technical lift required, and we handle all the configuration on our end.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div>
+            <h4>Your engineer gets up to speed</h4>
+            <p>Your dedicated Envoy engineer reviews your process setup, equipment history, and current operating targets. We identify which process areas to prioritize and configure the initial exception thresholds for your operation.</p>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div>
+            <h4>Reports start arriving</h4>
+            <p>Your daily reports begin. For the first few weeks, your Envoy engineer is in close contact — calibrating findings to your feedback, refining what's relevant, and getting attuned to your mill's patterns. Most clients find real value in the first week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ CTA ═══ -->
+  <section class="cta-section">
+    <div class="cta-bg-img" aria-hidden="true"></div>
+    <div class="cta-inner">
+      <p class="eyebrow eyebrow-light">Ready to Start?</p>
+      <h2>See what your data has been trying to tell you.</h2>
+      <p>Request a demo and we'll walk you through an example report built from real mill data — so you know exactly what your team would be receiving every morning.</p>
+      <div class="btn-group" style="justify-content:center;">
+        <a href="contact.html" class="btn btn-white">Request a Demo</a>
+        <a href="smart-centerlines.html" class="btn btn-white-outline">Next: Smart Centerlines →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="https://static.showit.co/1200/C46F5PckjfpCvFsJkLfy1A/233516/envoy_logo_primary_colors.png" alt="Envoy Development" />
+          <p>Envoy transforms real-time mill data into actionable insights — delivered by engineers with real mill experience. Founded 2003.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="solutions.html">Solutions Overview</a></li>
+            <li><a href="process-reliability-reporting.html">Process Reliability Reporting</a></li>
+            <li><a href="smart-centerlines.html">Envoy Smart Centerlines</a></li>
+            <li><a href="envoy-intelligence.html">Envoy Intelligence</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Envoy</a></li>
+            <li><a href="intelligent-factory.html">The Intelligent Factory</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="resources.html#articles">Articles &amp; Insights</a></li>
+            <li><a href="resources.html#whitepapers">Whitepapers</a></li>
+            <li><a href="resources.html#case-studies">Case Studies</a></li>
+            <li><a href="resources.html#glossary">Glossary</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <span>&copy; 2025 Envoy Development, LLC. All rights reserved.</span>
+        <a href="contact.html">Request a Demo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

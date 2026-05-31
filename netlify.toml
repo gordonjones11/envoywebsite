@@ -1,0 +1,15 @@
+# Netlify configuration for the Envoy Development site.
+# This is a plain static HTML/CSS/JS site, so there is no build step —
+# Netlify just publishes the files in this folder as-is.
+
+[build]
+  # No build command needed for a static site.
+  command = ""
+  # Publish the repository root (where index.html lives).
+  publish = "."
+
+[[redirects]]
+  # Friendly fallback: send unknown paths to the home page.
+  from = "/*"
+  to = "/index.html"
+  status = 404
