@@ -334,6 +334,18 @@ p  { line-height: 1.75; color: var(--gray-600); }
   margin-bottom: 1.25rem; width: fit-content;
 }
 
+.tier-media {
+  display: block;
+  width: calc(100% + 4rem);
+  height: 158px;
+  object-fit: cover;
+  object-position: center top;
+  margin: -2.25rem -2rem 1.5rem;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border-bottom: 1px solid var(--gray-200);
+  background: var(--gray-50);
+}
+
 .tier-icon {
   width: 52px; height: 52px; background: var(--green-100); border-radius: var(--radius);
   display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;
