@@ -647,6 +647,54 @@ p  { line-height: 1.75; color: var(--gray-600); }
 .if-teaser h2 { color: var(--white); margin-bottom: 1rem; }
 .if-teaser p  { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 2rem; }
 
+/* ─── Benefits / Results (figure cards) ─── */
+.benefit-feature {
+  display: grid; grid-template-columns: 1fr 1.15fr; gap: 2.75rem; align-items: center;
+  background: var(--white); border: 1px solid var(--green-200);
+  border-radius: var(--radius-lg); padding: 2.25rem 2.5rem;
+  box-shadow: var(--shadow-sm); margin-bottom: 1.75rem;
+}
+.benefit-feature .lead-tag {
+  display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--green-700);
+  background: var(--green-100); border-radius: 999px;
+  padding: 0.3rem 0.7rem; margin-bottom: 0.85rem;
+}
+.benefit-feature h3 { color: var(--navy); margin-bottom: 0.6rem; }
+.benefit-feature p  { font-size: 0.95rem; }
+.benefit-feature p + p { margin-top: 0.75rem; }
+
+.benefits-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.benefit-item {
+  display: flex; flex-direction: column;
+  background: var(--white); border: 1px solid var(--gray-200);
+  border-top: 3px solid var(--green-600); border-radius: var(--radius);
+  padding: 1.5rem 1.5rem 1.65rem; box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--dur), transform var(--dur);
+}
+.benefit-item:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+.benefit-item h4 { color: var(--navy); margin-bottom: 0.4rem; }
+.benefit-item p  { font-size: 0.9rem; }
+
+.benefit-figure {
+  background: var(--gray-50); border: 1px solid var(--gray-200);
+  border-radius: var(--radius-sm); padding: 0.6rem 0.7rem;
+  margin-bottom: 1.15rem;
+}
+.benefit-feature .benefit-figure { margin-bottom: 0; padding: 0.9rem 1rem; }
+.benefit-figure svg { display: block; width: 100%; height: auto; }
+
+/* small inline icon slot (kept styled so it can never render raw) */
+.benefit-icon {
+  flex-shrink: 0; width: 40px; height: 40px; border-radius: var(--radius-sm);
+  background: var(--green-100); margin-bottom: 1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.benefit-icon svg {
+  width: 20px; height: 20px; stroke: var(--green-800); fill: none;
+  stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round;
+}
+
 /* ─── Product Page Responsive ─── */
 @media (max-width: 768px) {
   .product-hero-inner { grid-template-columns: 1fr; }
@@ -657,4 +705,6 @@ p  { line-height: 1.75; color: var(--gray-600); }
   .feature-split-inner.reversed .feature-split-img { order: 0; }
   .chart-gallery, .report-grid { grid-template-columns: 1fr; }
   .method-grid { grid-template-columns: 1fr; }
+  .benefits-grid { grid-template-columns: 1fr; }
+  .benefit-feature { grid-template-columns: 1fr; gap: 1.75rem; padding: 1.75rem 1.5rem; }
 }
