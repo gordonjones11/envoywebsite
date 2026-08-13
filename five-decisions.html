@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Five Decisions | The Intelligent Factory | Envoy Development</title>
-  <meta name="description" content="The five decisions that run every factory: how fast to run, how to balance the process, when to intervene, what to fix first, and what to learn from yesterday. From the book Leading the Intelligent Factory." />
+  <meta name="description" content="How fast should we run? Where should everything else be set? When should we intervene? What should we fix first? What can we learn from yesterday? The five decisions that run every factory." />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -28,6 +28,7 @@
     .disc-col h4 { margin-top: 1.4rem; }
     .disc-col h4:first-child { margin-top: 0; }
     .disc-col p { color: var(--gray-600); line-height: 1.65; }
+    .disc-col p + p { margin-top: 0.85rem; }
     .disc-framework {
       background: var(--white); border: 1px solid var(--gray-200); border-radius: 12px;
       padding: 1.75rem 1.75rem 1.5rem; box-shadow: var(--shadow-sm);
@@ -42,6 +43,17 @@
     .disc-framework ol li strong { color: var(--gray-900); }
     .steps-list .step-item h4 a { text-decoration: none; color: inherit; }
     .steps-list .step-item h4 a:hover { color: var(--green-700); }
+    .disc-inpractice {
+      max-width: 1020px; margin: 1.75rem auto 0; padding: 0.9rem 1.1rem;
+      background: var(--green-50); border-left: 3px solid var(--green-600);
+      border-radius: 0 8px 8px 0; font-size: 0.9rem; color: var(--gray-700);
+    }
+    .disc-inpractice strong { color: var(--green-800); }
+    .arc-line {
+      max-width: 780px; margin: 2.25rem auto 0; text-align: center;
+      font-size: 1.05rem; color: var(--gray-700); line-height: 1.6;
+    }
+    .arc-line b { color: var(--navy); }
     @media (max-width: 860px) {
       .disc-grid { grid-template-columns: 1fr; gap: 1.75rem; }
     }
@@ -69,14 +81,10 @@
           <span class="nav-link" tabindex="0">The Intelligent Factory <span class="nav-chevron">▾</span></span>
           <div class="nav-dropdown">
             <a href="intelligent-factory.html" class="dropdown-item"><strong>Start Here</strong><span>What the intelligent factory is, and why now</span></a>
-            <a href="seven-disciplines.html" class="dropdown-item"><strong>The Seven Disciplines</strong><span>The core practices of an intelligent operation</span></a>
-            <a href="technology-stack.html" class="dropdown-item"><strong>The Technology Stack</strong><span>The layers that turn mill data into decisions</span></a>
-            <a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>Where your mill stands, and what comes next</span></a>
-            <a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>The choices that shape a mill's transformation</span></a>
-            <a href="articles.html" class="dropdown-item"><strong>Articles</strong><span>Essays and insights from our engineers</span></a>
-            <a href="research.html" class="dropdown-item"><strong>Research</strong><span>Data-driven findings from real mill operations</span></a>
-            <a href="book.html" class="dropdown-item"><strong>The Book</strong><span>The Intelligent Factory, in long form</span></a>
-            <a href="assessment.html" class="dropdown-item"><strong>Assessment</strong><span>Gauge your mill's intelligence maturity</span></a>
+            <a href="five-decisions.html" class="dropdown-item"><strong>The Five Decisions</strong><span>What every factory decides, every day</span></a>
+            <a href="maturity-model.html" class="dropdown-item"><strong>The Maturity Model</strong><span>Unstable to Adaptive: where your mill stands</span></a>
+            <a href="assessment.html" class="dropdown-item"><strong>The Assessment</strong><span>Score your mill: five decisions, five levels</span></a>
+            <a href="book.html" class="dropdown-item"><strong>The Book</strong><span>Leading the Intelligent Factory</span></a>
           </div>
         </li>
         <li><a class="nav-link" href="about.html">About</a></li>
@@ -125,14 +133,14 @@
           <div class="step-num">1</div>
           <div>
             <h4><a href="#decision-1">How fast should we run?</a></h4>
-            <p>The operating-rate decision: balancing throughput, yield, quality, reliability, energy, equipment health, and market conditions. The intelligent factory doesn't simply run faster; it learns when to push, when to hold, and when to back off.</p>
+            <p>The rate decision. At the front door it is an economics question set by the market. Everywhere upstream it is a coordination question, derived from the machine rate and the inventories in between. The intelligent factory doesn't simply run faster; it learns when to push, when to hold, and when to back off.</p>
           </div>
         </div>
         <div class="step-item">
           <div class="step-num">2</div>
           <div>
-            <h4><a href="#decision-2">How should we balance the process?</a></h4>
-            <p>Every unit operation affects the next. The factory performs as a system, not a collection of isolated assets, and one area winning at the expense of the whole is the most common way mills lose.</p>
+            <h4><a href="#decision-2">Where should everything else be set?</a></h4>
+            <p>The rate is settled. Now where do the other hundred variables go? There are many ways to hit the same number, and they are not equally good. This is the decision operators argue about, and the one most mills have never had the evidence to settle.</p>
           </div>
         </div>
         <div class="step-item">
@@ -157,6 +165,7 @@
           </div>
         </div>
       </div>
+      <p class="arc-line fade-in"><b>One and two set the run. Three and four handle what goes wrong. Five makes it stick.</b><br>Run it, react to it, learn from it.</p>
     </div>
   </section>
 
@@ -167,14 +176,17 @@
       <div class="disc-header fade-in">
         <p class="eyebrow">Decision 1</p>
         <h2>How fast should we run?</h2>
-        <p class="disc-keyline">The intelligent factory knows when to push, when to hold, and when to back off.</p>
+        <p class="disc-keyline">At the front door it's an economics question. Everywhere upstream it's a coordination question. Same decision, different driver.</p>
       </div>
       <div class="disc-grid fade-in">
         <div class="disc-col">
           <h4>The decision</h4>
           <p>Every factory has to decide how hard to push the operation. This is not simply a speed question: it is a rate-setting decision that balances throughput, yield, quality, reliability, energy, safety, equipment health, constraints, customer demand, margin, inventory position, and profit per hour. In a paper mill, it's deciding how fast to run the machine on a given grade based on moisture profile, sheet break risk, dryer limitations, recent instability, and order demand.</p>
+          <h4>Two questions, not one</h4>
+          <p>Where you stand in the mill changes what this decision even is. At the paper machine it is an economics question, and the market sets it. When everything you make can be sold at attractive margins, tons beat efficiency. When the market is soft, the same machine should be dialled back and run cleaner, because cost per ton is now the measure. Same machine, same crew, opposite right answer.</p>
+          <p>Everywhere upstream, nothing sets its own rate. The digester's rate comes from the machine, from the tank levels in between, from white liquor availability, from how fast the evaporators keep up. Rate propagates backward from the front door.</p>
           <h4>What makes it hard</h4>
-          <p>Operating rate is a commercial decision as much as a production decision. When the market will absorb everything the mill can make at attractive margins, the right move may be to push toward demonstrated capability while managing quality and reliability risk. When the market is constrained, running flat out creates excess inventory, wastes energy, and stresses equipment. The intelligent decision may be to optimize yield, energy, quality, grade mix, or cash contribution instead of maximum throughput. Intelligence improves the decision by connecting current operating conditions with historical performance, known constraints, quality risk, maintenance risk, and economic impact.</p>
+          <p>The trap is treating <em>how fast can we run</em> as though it were <em>how fast should we run</em>. Capability is a constraint question; rate is an economics question, and most mills only ever answer the first. Operating rate is a commercial decision as much as a production decision. When the market will absorb everything the mill can make at attractive margins, the right move may be to push toward demonstrated capability while managing quality and reliability risk. When the market is constrained, running flat out creates excess inventory, wastes energy, and stresses equipment. The intelligent decision may be to optimize yield, energy, quality, grade mix, or cash contribution instead of maximum throughput. Intelligence improves the decision by connecting current operating conditions with historical performance, known constraints, quality risk, maintenance risk, and economic impact.</p>
         </div>
         <div class="disc-framework">
           <p class="fw-label">Key Questions</p>
@@ -189,6 +201,7 @@
           </ul>
         </div>
       </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> Engineering Intelligence computes the rate against live constraints and inventories; Operational Intelligence keeps it in view as conditions move. See <a href="envoy-intelligence.html">Envoy Process Intelligence</a>.</p>
     </div>
   </section>
 
@@ -198,29 +211,34 @@
     <div class="container">
       <div class="disc-header fade-in">
         <p class="eyebrow">Decision 2</p>
-        <h2>How should we balance the process?</h2>
-        <p class="disc-keyline">Local optimization is not the same as factory optimization.</p>
+        <h2>Where should everything else be set?</h2>
+        <p class="disc-keyline">There are many ways to hit the same number. They are not equally good, and most mills settle that question by argument rather than by evidence.</p>
       </div>
       <div class="disc-grid fade-in">
         <div class="disc-col">
           <h4>The decision</h4>
-          <p>Every factory has to balance flows, constraints, setpoints, utilities, energy, quality, inventory, and production commitments across interconnected process areas. In a paper mill, that means balancing wet-end stability, machine speed, press loading, dryer capacity, steam use, moisture targets, sheet break risk, broke handling, and order demand, all at once. The factory performs as a system, not as a collection of isolated assets.</p>
-          <h4>What makes it hard</h4>
-          <p>The local-optimization trap: a mill can make one area look better while making the total operation worse. One line, unit, department, or KPI improves while throughput, quality, energy, reliability, or profit per hour deteriorates somewhere else. Most mills manage this balance on instinct. The intelligent factory makes system-level tradeoffs visible, helping leaders and frontline teams understand how changes in one part of the operation affect the rest, so no part of the factory wins at the expense of the whole.</p>
+          <p>The rate is settled. Now where do the other hundred variables go? On a recovery boiler, solids multiplied by flow gives the firing rate, but many combinations of flow, solids, and air distribution produce that same firing rate, with different steam generation, different reduction efficiency, and different plugging risk. In a digester, many combinations of temperature and time reach the same H-factor, with different yield, different rejects, and different steam. On a paper machine, many combinations of refining, steam, and speed hold the same quality spec at very different cost.</p>
+          <h4>Why operators argue</h4>
+          <p>Not because one recipe works and another doesn't. Because they all work. Each one hits the number. The argument is about which path costs least, and most mills have never had the evidence to settle it, so it gets settled by seniority, by habit, or by whoever is most stubborn on that crew. Everyone in the control room is right, and the mill still pays for the difference.</p>
+          <h4>What makes it hardest</h4>
+          <p>Turndown. Back-end processes are tuned, centerlined, and remembered at full rate. Every operator knows how the digester runs flat out. Ask the same area to run at eighty percent, which is precisely what Decision 1 does when the market softens, and there is no recipe. The operating point that was optimal at full rate is not optimal at reduced rate, and almost no mill has worked out what replaces it.</p>
+          <h4>The trap</h4>
+          <p>Local optimization is not mill optimization. The best operating point for the evaporators alone is not the best operating point for the recovery island. One area can look better while the total operation gets worse.</p>
         </div>
         <div class="disc-framework">
           <p class="fw-label">Key Questions</p>
-          <h4>Seeing the whole system</h4>
+          <h4>Finding the operating point</h4>
           <ul class="fw-questions">
-            <li>Where is the current constraint, and is it fixed, or moving?</li>
-            <li>Which upstream and downstream areas are affecting each other?</li>
-            <li>Are we optimizing one asset, line, or KPI at the expense of the total process?</li>
-            <li>What setpoints or operating choices are driving quality variation, instability, waste, or energy use?</li>
-            <li>Are inventory, WIP, tank levels, or broke creating hidden constraints?</li>
-            <li>Which balance produces the best total result across throughput, yield, quality, energy, reliability, and profit per hour?</li>
+            <li>For this target, how many combinations of settings would reach it?</li>
+            <li>Which of those combinations costs least, and how do we know?</li>
+            <li>Do all crews run this the same way? If not, which one is right?</li>
+            <li>What changes about the answer when we are not at full rate?</li>
+            <li>Are we optimizing one asset, line, or department at the expense of the total process?</li>
+            <li>What does this operating point cost us per ton, and what would the best one cost?</li>
           </ul>
         </div>
       </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> this is the decision <a href="smart-centerlines.html">Envoy Smart Centerlines</a> answers, with cost-optimal targets and limits for every grade, rate, and run condition.</p>
     </div>
   </section>
 
@@ -241,9 +259,9 @@
           <p>The timing tradeoff cuts both ways. Late intervention lets small abnormal conditions become downtime, quality loss, equipment damage, or customer impact. Over-intervention creates alarm fatigue, unnecessary work, operator frustration, and loss of trust. Intelligence improves this decision by distinguishing normal variation from meaningful change and guiding the right level of response. Early warning is only valuable when it leads to timely, proportional, and trusted action.</p>
         </div>
         <div class="disc-framework">
-          <p class="fw-label">Framework</p>
-          <h4>The Intervention Ladder</h4>
-          <p style="color:var(--gray-600);">Seven rungs, from watching to learning:</p>
+          <p class="fw-label">Levels of Response</p>
+          <h4>From watching to learning</h4>
+          <p style="color:var(--gray-600);">Intervention is not one thing. It has degrees:</p>
           <ol>
             <li><strong>Monitor:</strong> the signal is visible, but no action is required yet</li>
             <li><strong>Investigate:</strong> the pattern is unusual enough to check context and likely causes</li>
@@ -255,6 +273,7 @@
           </ol>
         </div>
       </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> Smart Centerlines defines what out-of-limits means; <a href="envoy-intelligence.html">Operational Intelligence</a> groups deviations into events and makes the call.</p>
     </div>
   </section>
 
@@ -275,8 +294,8 @@
           <p>Priority is not the same as urgency. Something can feel urgent because it is recent, visible, loud, or politically important, but the right priority depends on risk, value, constraint impact, customer impact, recurrence, and actionability. Safety, regulatory, and environmental obligations are never just another economic tradeoff; existing compliance systems remain authoritative. Once those are respected, intelligence helps leaders focus scarce resources on the problems that matter most. A signal without prioritization becomes backlog.</p>
         </div>
         <div class="disc-framework">
-          <p class="fw-label">Framework</p>
-          <h4>The Fix-First Filter</h4>
+          <p class="fw-label">What to Weigh</p>
+          <h4>Before it goes on the list</h4>
           <p style="color:var(--gray-600);">Seven tests for what deserves attention now:</p>
           <ol>
             <li><strong>Risk:</strong> what could happen if we do nothing?</li>
@@ -289,6 +308,7 @@
           </ol>
         </div>
       </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> <a href="process-reliability-reporting.html">Process Reliability Reporting</a> delivers findings ranked by impact before the shift starts.</p>
     </div>
   </section>
 
@@ -309,8 +329,8 @@
           <p>Looking backward is not the same as learning. Mills already have production reports, downtime reports, shift logs, maintenance histories, and dashboards, but those artifacts only become learning when they change what people do next. Too much knowledge stays trapped in shift notes, maintenance comments, engineering spreadsheets, and individual memory, and recurring problems get solved from scratch again and again. A factory has not learned from an event until the learning changes a workflow, runbook, threshold, standard, model, or training material.</p>
         </div>
         <div class="disc-framework">
-          <p class="fw-label">Framework</p>
-          <h4>The Yesterday-to-Tomorrow Loop</h4>
+          <p class="fw-label">What Learning Takes</p>
+          <h4>From event to standard</h4>
           <p style="color:var(--gray-600);">Seven steps that turn experience into advantage:</p>
           <ol>
             <li><strong>Capture:</strong> what happened?</li>
@@ -323,6 +343,7 @@
           </ol>
         </div>
       </div>
+      <p class="disc-inpractice fade-in"><strong>In practice:</strong> <a href="envoy-intelligence.html">Engineering Intelligence runbooks</a> turn the investigation into something repeatable, so the second time costs less than the first.</p>
     </div>
   </section>
 
@@ -333,7 +354,7 @@
       <div class="section-intro fade-in">
         <p class="eyebrow">Go Deeper</p>
         <h2>How well does your mill make these five decisions?</h2>
-        <p>The five decisions look different at every stage of intelligence maturity, from reactive firefighting to adaptive, learning operations. See where your mill stands on <a href="maturity-model.html">The Maturity Model</a>, explore how <a href="seven-disciplines.html">The Seven Disciplines</a> improve each decision, or read the full story in <a href="book.html">Leading the Intelligent Factory</a>.</p>
+        <p>The five decisions look different at every stage of operational maturity, from unstable firefighting to a mill that learns. Score each decision against the five levels of <a href="maturity-model.html">The Maturity Model</a> and the answer isn't a number, it's a sentence: repeatable on quality, unstable on reliability, so start there. The full story is in <a href="book.html">Leading the Intelligent Factory</a>.</p>
         <div class="btn-group" style="justify-content:center; margin-top:1.5rem;">
           <a href="assessment.html" class="btn btn-primary">Take the Assessment</a>
           <a href="book.html" class="btn btn-outline">About the Book</a>
@@ -371,14 +392,14 @@
           <h5>The Intelligent Factory</h5>
           <ul>
             <li><a href="intelligent-factory.html">Start Here</a></li>
-            <li><a href="seven-disciplines.html">The Seven Disciplines</a></li>
-            <li><a href="technology-stack.html">The Technology Stack</a></li>
-            <li><a href="maturity-model.html">The Maturity Model</a></li>
             <li><a href="five-decisions.html">The Five Decisions</a></li>
+            <li><a href="maturity-model.html">The Maturity Model</a></li>
+            <li><a href="assessment.html">The Assessment</a></li>
+            <li><a href="book.html">The Book</a></li>
+            <li><a href="seven-disciplines.html">The Seven Disciplines</a></li>
+            <li><a href="technology-stack.html">The Intelligent Factory Stack</a></li>
             <li><a href="articles.html">Articles</a></li>
             <li><a href="research.html">Research</a></li>
-            <li><a href="book.html">The Book</a></li>
-            <li><a href="assessment.html">Assessment</a></li>
           </ul>
         </div>
       </div>
